@@ -25,5 +25,5 @@ jobs:
           distribution: 'temurin'
           java-version: ${{ matrix.java }}
 
-      - name: Build and Test
-        run: mvn clean install
+      - name: Build, Test, and Check Coverage
+        run: mvn clean verify
